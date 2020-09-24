@@ -7,7 +7,8 @@ module PremierLeague
   class Bot < SlackRubyBot::Bot
     help do
       title 'Premier League App'
-      desc 'This app brings you the relative information on the Premier League'
+      desc 'This app brings you the relative information on the Premier League
+If in a channel: type @Premier League \'command name\' or \'help\' if in app'
 
       command :fantasy do
         title 'fantasy'
