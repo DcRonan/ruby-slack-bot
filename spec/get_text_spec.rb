@@ -7,7 +7,6 @@ require_relative '../lib/matches/get_text.rb'
 
 RSpec::Matchers.define :respond_with_slack_messages do |expected|
   include SlackRubyBot::SpecHelpers
-
   match do |actual|
     raise ArgumentError, 'respond_with_slack_messages expects an array of ordered responses' if expected && !expected.respond_to?(:each)
 
