@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 require 'open-uri'
 
 module PremierLeague
+  # Class for getting links from commands
   class GetPrem < SlackRubyBot::Commands::Base
     command 'fantasy' do |client, data, _match|
       client.say(channel: data.channel, text: 'https://fantasy.premierleague.com/')

@@ -1,4 +1,9 @@
+# frozen_string_literal: true
+
+# rubocop:disable Metrics/BlockLength
+
 module PremierLeague
+  # Class for the Bot help
   class Bot < SlackRubyBot::Bot
     help do
       title 'Premier League App'
@@ -66,3 +71,5 @@ module PremierLeague
     end
   end
 end
+
+# rubocop:enable Metrics/BlockLength
