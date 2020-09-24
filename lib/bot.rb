@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/BlockLength
+# rubocop:disable Metrics/BlockLength, Layout/LineLength
 
 module PremierLeague
   # Class for the Bot help
@@ -72,4 +72,4 @@ module PremierLeague
   end
 end
 
-# rubocop:enable Metrics/BlockLength
+# rubocop:enable Metrics/BlockLength, Layout/LineLength

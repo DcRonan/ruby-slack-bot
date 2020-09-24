@@ -20,15 +20,18 @@ module PremierLeague
     end
 
     match(/(leeds|soton|south|spurs|totten)/) do |client, data, _match|
-      client.say(channel: data.channel, text: 'Meh.. jokes, not a bad choice 😅')
+      client.say(channel: data.channel, text: 'Meh.. jokes, not a bad choice 😅.
+When you\'re ready go ahead and type \'help\' to get started!!')
     end
 
     match(/(man|mufc|blues|chelsea|everton)/) do |client, data, _match|
-      client.say(channel: data.channel, text: "A big NO NO, please leave.. nah i'm only joking you can stay 🤣")
+      client.say(channel: data.channel, text: "A big NO NO, please leave.. nah i'm only joking you can stay 🤣.
+When you\'re ready go ahead and type \'help\' to get started!!")
     end
 
     match(/(liv|lfc)/) do |client, data, _match|
-      client.say(channel: data.channel, text: "You'll Never Walk Alone! ⭐")
+      client.say(channel: data.channel, text: "You'll Never Walk Alone! ⭐
+When you\'re ready go ahead and type \'help\' to get started!! 😊")
     end
   end
 end
