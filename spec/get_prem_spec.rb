@@ -5,6 +5,14 @@
 require 'rspec/expectations'
 require_relative '../lib/commands/get_prem.rb'
 
+begin
+  require 'slack-ruby-bot/rspec'
+rescue LoadError
+  system 'bundle install'
+  system 'rspec'
+  exit
+end
+
 RSpec::Matchers.define :respond_with_slack_message do |expected|
   include SlackRubyBot::SpecHelpers
 
