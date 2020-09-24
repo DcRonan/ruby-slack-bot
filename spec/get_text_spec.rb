@@ -83,4 +83,47 @@ describe SlackRubyBot::Bot do
   it 'Checks if the message contains the emoji 😔' do
     expect(message: "#{SlackRubyBot.config.user} upset").to respond_with_slack_message(/😔/)
   end
+
+  it 'Checks if the response is correct when sending \'spurs\'' do
+    expect(message: "#{SlackRubyBot.config.user} spurs").to respond_with_slack_message("Meh.. jokes, not a bad choice 😅.
+When you\'re ready go ahead and type \'help\' to get started!!")
+  end
+
+  it 'Checks if the response is not a given message when sending \'spurs\'' do
+    expect(message: "#{SlackRubyBot.config.user} spurs").not_to respond_with_slack_message('Good to hear!')
+  end
+
+  it 'Checks if the message contains the emoji 😅' do
+    expect(message: "#{SlackRubyBot.config.user} spurs").to respond_with_slack_message(/😅/)
+  end
+
+  it 'Checks if the response is correct when sending \'upset\'' do
+    expect(message: "#{SlackRubyBot.config.user} upset").to respond_with_slack_message("I'm sorry to hear that 😔, I hope you feel better soon! Let me introduce myself.. I am a Bot 🤖 and I contain all sorts of information on the Premier League. Let's get to know each other first, what is your Favourite Club? ⭐")
+  end
+
+  it 'Checks if the response is correct when sending \'chelsea\'' do
+    expect(message: "#{SlackRubyBot.config.user} chelsea").to respond_with_slack_message("A big NO NO, please leave.. nah i'm only joking you can stay 🤣.
+When you\'re ready go ahead and type \'help\' to get started!!")
+  end
+
+  it 'Checks if the response is not a given message when sending \'chelsea\'' do
+    expect(message: "#{SlackRubyBot.config.user} chelsea").not_to respond_with_slack_message('Amazing!')
+  end
+
+  it 'Checks if the message contains the emoji 🤣' do
+    expect(message: "#{SlackRubyBot.config.user} chelsea").to respond_with_slack_message(/🤣/)
+  end
+
+  it 'Checks if the response is correct when sending \'lfc\'' do
+    expect(message: "#{SlackRubyBot.config.user} lfc").to respond_with_slack_message("You'll Never Walk Alone! ⭐
+When you\'re ready go ahead and type \'help\' to get started!! 😊")
+  end
+
+  it 'Checks if the response is not a given message when sending \'lfc\'' do
+    expect(message: "#{SlackRubyBot.config.user} lfc").not_to respond_with_slack_message('Not for me.')
+  end
+
+  it 'Checks if the message contains the emoji ⭐' do
+    expect(message: "#{SlackRubyBot.config.user} lfc").to respond_with_slack_message(/⭐/)
+  end
 end
