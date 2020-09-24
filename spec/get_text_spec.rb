@@ -1,4 +1,4 @@
-# rubocop:disable Layout/LineLength, Metrics/BlockLength
+# rubocop:disable Layout/LineLength
 
 require 'slack-ruby-bot/rspec'
 require 'rspec/expectations'
@@ -128,4 +128,4 @@ When you\'re ready go ahead and type \'help\' to get started!! 😊")
   end
 end
 
-# rubocop:enable Layout/LineLength, Metrics/BlockLength
+# rubocop:enable Layout/LineLength
