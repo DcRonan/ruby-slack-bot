@@ -64,5 +64,5 @@ module PremierLeague
         long_desc 'Returns the \'News\' page'
       end
     end
-  end  
-end  
+  end
+end

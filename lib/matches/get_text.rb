@@ -25,5 +25,5 @@ module PremierLeague
     match /(liv|lfc)/ do |client, data, _match|
       client.say(channel: data.channel, text: "You'll Never Walk Alone! ⭐")
     end
-  end  
+  end
 end
