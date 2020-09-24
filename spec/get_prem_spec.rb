@@ -3,6 +3,7 @@
 # rubocop:disable Layout/LineLength
 
 require 'rspec/expectations'
+require_relative '../lib/commands/get_prem.rb'
 
 RSpec::Matchers.define :respond_with_slack_message do |expected|
   include SlackRubyBot::SpecHelpers
@@ -38,6 +39,10 @@ end
 describe SlackRubyBot::Commands do
   it 'Checks if the Bot returns the link for \'fantasy\'' do
     expect(message: "#{SlackRubyBot.config.user} fantasy").to respond_with_slack_message
+  end
+
+  it 'Checks if the Bot returns the link for \'fantasy\'' do
+    expect(message: "#{SlackRubyBot.config.user} fantasy").to respond_with_slack_message('https://fantasy.premierleague.com/')
   end
 
   it 'Checks if the Bot returns the link for \'fixtures\'' do
