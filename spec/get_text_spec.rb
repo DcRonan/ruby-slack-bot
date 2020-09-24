@@ -2,16 +2,10 @@
 
 # rubocop:disable Layout/LineLength, Metrics/BlockLength
 
+require 'slack-ruby-bot/rspec'
 require 'rspec/expectations'
 require_relative '../lib/matches/get_text.rb'
 
-begin
-  require 'slack-ruby-bot/rspec'
-rescue LoadError
-  system 'bundle install'
-  system 'rspec'
-  exit
-end
 
 RSpec::Matchers.define :respond_with_slack_messages do |expected|
   include SlackRubyBot::SpecHelpers
