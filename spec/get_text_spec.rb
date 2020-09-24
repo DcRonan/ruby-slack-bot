@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # rubocop:disable Layout/LineLength, Metrics/BlockLength
 
 require 'slack-ruby-bot/rspec'
