@@ -52,11 +52,35 @@ describe SlackRubyBot::Bot do
     expect(message: "#{SlackRubyBot.config.user} hey").to respond_with_slack_message('Hi there! 👋 How are you today? 😁')
   end
 
-  it 'Checks if the response is correct when sending \'hey\'' do
+  it 'Checks if the response is not a given message when sending \'hey\'' do
     expect(message: "#{SlackRubyBot.config.user} hey").not_to respond_with_slack_message('Hey! How are you?')
   end
   
   it 'Checks if the message contains the emoji 👋' do
     expect(message: "#{SlackRubyBot.config.user} hey").to respond_with_slack_message(/👋/)
+  end
+
+  it 'Checks if the response is correct when sending \'thanks\'' do
+    expect(message: "#{SlackRubyBot.config.user} thanks").to respond_with_slack_message("Great to hear! 😊 Let me introduce myself.. I am a Bot 🤖 and I contain all sorts of information on the Premier League. Let's get to know each other first, what is your Favourite Club? ⭐")
+  end
+
+  it 'Checks if the response is not a given message when sending \'thanks\'' do
+    expect(message: "#{SlackRubyBot.config.user} thanks").not_to respond_with_slack_message('Nice to hear. Cant wait to talk.')
+  end
+
+  it 'Checks if the message contains the emoji 🤖' do
+    expect(message: "#{SlackRubyBot.config.user} thanks").to respond_with_slack_message(/🤖/)
+  end
+
+  it 'Checks if the response is correct when sending \'upset\'' do
+    expect(message: "#{SlackRubyBot.config.user} upset").to respond_with_slack_message("I'm sorry to hear that 😔, I hope you feel better soon! Let me introduce myself.. I am a Bot 🤖 and I contain all sorts of information on the Premier League. Let's get to know each other first, what is your Favourite Club? ⭐")
+  end
+
+  it 'Checks if the response is not a given message when sending \'upset\'' do
+    expect(message: "#{SlackRubyBot.config.user} upset").not_to respond_with_slack_message('Don\'t care.')
+  end
+
+  it 'Checks if the message contains the emoji 😔' do
+    expect(message: "#{SlackRubyBot.config.user} upset").to respond_with_slack_message(/😔/)
   end
 end
