@@ -1,76 +1,81 @@
-# Project Name
+# Ruby Slack Bot 🤖
 ![Microverse](https://img.shields.io/badge/-Microverse-6F23FF?style=for-the-badge)
-## Library Directory
+![Slack](https://img.shields.io/badge/-Slack-4A154B?style=for-the-badge&logo=Slack&logoColor=white)
+
+## Library Directory 📙
  
 | Contents        |
 | ------------- |
-| [Built With](#built-with) |
-| [Live Demo](#live-demo) |
-| [Run Tests](#run-tests) |
+| [Built With](#built-with-🛠) |
+| [Install](#install-⏳) |
+| [Hints](#hints-💡) |
+| [Testing](#testing-⚙️) |
 | [Authors](#authors) | 
 | [License](#license) | 
 
 ## Description
-> Write about the project...
+> This is my final project for completing the `Ruby` module. In doing so, I have created a `Slack Bot`.
 
-![screenshot](./src/assets/images/screenshot.svg)
+![gif](./assets/slack-recording.gif)
 
-Additional description about the project and its features...
+In this Slack Bot, I have created it so you can interact, receive messages and information for what you desire. I have created an app that provides you with a broad range of information on an english football league, the `Premier League` ⚽
 
-## Built With
+## Built With 🛠
 ```
-- HTML5 
-- CSS3
+- Ruby 2.6.3
+- Slack
 - VS Code
-- Font Awesome Icons
+- Ruby Gems
 ```
 
-![img](./src/assets/svg/html-5.svg) ![img](./src/assets/svg/css-3.svg)
-![img](./src/assets/svg/v-s-code.svg) ![img](./src/assets/svg/fontawesome.svg)
+![img](./assets/svg/ruby.svg) ![img](./assets/slack.png) ![img](./assets/svg/v-s-code.svg) ![img](./assets/svg/rubygems.svg)
 
-<!--
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white&labelColor=000)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white&labelColor=000)
-![VS Code](https://img.shields.io/badge/-VS_Code-007ACC?style=for-the-badge&logo=Visual-Studio-Code&logoColor=white&labelColor=000)
-![Font Awesome](https://img.shields.io/badge/-Font_Awesome-007ACC?style=for-the-badge&logo=Font-Awesome&logoColor=white&labelColor=000) -->
+## Install ⏳
 
-## Live Demo
+> Follow these steps below to get my Application working
 
-#### Click on image below..
+1. - [ ] Open your `Terminal`
+2. - [ ] Navigate to the directory where you will like to install the repo by running `cd FOLDER-NAME`
+3. - [ ] Run `git clone git@github.com:DcRonan/ruby-slack-bot.git` to download <b>or</b> you can download using `HTTPS` by running `git clone https://github.com/DcRonan/ruby-slack-bot.git` in the terminal
+4. - [ ] Run `cd ruby-slack-bot` to enter directory
+5. - [ ] Run `bundle install` to install Ruby Gems (<b>hint:</b> Mac users, if not working then run `sudo bundle install`)
+6. - [ ] Create your own Slack [workspace](https://slack.com/create#email)
+7. - [ ] Create your own [Bot](https://slack.com/services/new/bot)
+8. - [ ] Give it a `username`, `name` and `logo` if you want
+9. - [ ] Keep note of your `API Token` as shown in the example below:
+![api-token](./assets/api.png)
+10. - [ ] Click `Save Integration`
+11. - [ ] Open a text editor, `VS Code` for an example
+12. - [ ] Create a `.env` file
+13. - [ ] In the `.env` file, copy and paste `SLACK_API_TOKEN= YOUR-TOKEN-HERE`
+14. - [ ] Open Slack and in your new workspace, click the `+` on <b>Apps</b> to add your Bot
+15. - [ ] Run `rackup` in your terminal to get your Bot working
+16. - [ ] Type `help` in the Slack app to get started
 
-<a href="#" target="_blank">
-    <img src="src/assets/svg/monitor.svg">
-</a>
+> There are many commands that my app provides so please look below on how to access them
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
+## Hints 💡
 
-## Run Tests
+* Start a conversation by saying `hello` or `hey` : It will respond with different responses depending on the conversation
+* Type `help` to show the list of commands
+* Type `fixtures` for example and this will give you the link to all the upcoming Premier League fixtures 📆
+* Invite your Bot to a channel mentioning their name `@bot name` and clicking `Invite to Channel`
+* To use the commands in a channel, type `@bot name [command-name]`
 
-### Install
-```
-npm i
-```
-### Run
-```
-npm test
-```
+## Testing ⚙️
 
+> I have used [rspec](https://rspec.info/) testing tool to test the code by creating many test cases. Please follow below to test my code
+
+1. - [ ] Open `Terminal` again
+2. - [ ] Run `cd ruby-slack-bot` to enter directory
+3. - [ ] Run `rspec` to start testing
+4. - [ ] All tests will pass ✅
+
+![tests](./assets/test.png)
 
 ## Authors
 
 ### 👨‍💻 Daniel Ronan
-<!--
-![img](src/assets/svg/github.svg) [@DcRonan](https://github.com/DcRonan) <br>
-![img](src/assets/svg/linkedin.svg) [Daniel Ronan](https://www.linkedin.com/in/danronan10/) <br>
-![img](src/assets/svg/twitter.svg) [@dc_ronan](https://twitter.com/dc_ronan) <br>
-![img](src/assets/svg/mail.svg) <a href="mailto:danielconnorronan@gmail.com?subject=Hi Dan!"> Email me</a> -->
-[![GitHub](https://img.shields.io/badge/-GitHub-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/DcRonan) <br>
-[![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/danronan10/) <br>
-[![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:danielconnorronan@gmail.com) <br>
-[![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/dc_ronan)
-
-### 👨‍💻 - 👩‍💻 Coding Partner
-
 [![GitHub](https://img.shields.io/badge/-GitHub-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/DcRonan) <br>
 [![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/danronan10/) <br>
 [![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:danielconnorronan@gmail.com) <br>
@@ -80,16 +85,11 @@ npm test
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](enter issues url here).
+Feel free to check the [issues page](https://github.com/DcRonan/ruby-slack-bot/issues).
 
 ### Show your support
 
 Give a ⭐️ if you like this project!
-
-### Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
 
 ### License
 
