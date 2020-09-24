@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# rubocop:disable Layout/LineLength
+# rubocop:disable Layout/LineLength, Metrics/BlockLength
 
 require 'rspec/expectations'
 require_relative '../lib/matches/get_text.rb'
@@ -55,7 +55,7 @@ describe SlackRubyBot::Bot do
   it 'Checks if the response is not a given message when sending \'hey\'' do
     expect(message: "#{SlackRubyBot.config.user} hey").not_to respond_with_slack_message('Hey! How are you?')
   end
-  
+
   it 'Checks if the message contains the emoji 👋' do
     expect(message: "#{SlackRubyBot.config.user} hey").to respond_with_slack_message(/👋/)
   end
@@ -127,3 +127,5 @@ When you\'re ready go ahead and type \'help\' to get started!! 😊")
     expect(message: "#{SlackRubyBot.config.user} lfc").to respond_with_slack_message(/⭐/)
   end
 end
+
+# rubocop:enable Layout/LineLength, Metrics/BlockLength

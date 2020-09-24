@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# rubocop:disable Layout/LineLength
+# rubocop:disable Layout/LineLength, Metrics/BlockLength
 
 require 'rspec/expectations'
 require_relative '../lib/commands/get_prem.rb'
@@ -118,4 +118,4 @@ describe SlackRubyBot::Commands do
   end
 end
 
-# rubocop:enable Layout/LineLength
+# rubocop:enable Layout/LineLength, Metrics/BlockLength
