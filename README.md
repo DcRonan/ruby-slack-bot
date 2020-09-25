@@ -81,6 +81,12 @@ In this Slack Bot, I have created it so you can interact, receive messages and i
 [![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:danielconnorronan@gmail.com) <br>
 [![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/dc_ronan)
 
+### Acknowledgments 🌟
+
+Thank you to [Daniel Doubrovkine](https://github.com/dblock) for the tutorial on building this app 👊
+
+You can follow the tutorial [here](https://github.com/slack-ruby/slack-ruby-bot)
+
 ### 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
