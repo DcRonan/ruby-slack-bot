@@ -1,6 +1,5 @@
 # rubocop:disable Layout/LineLength
 
-require 'slack-ruby-bot/rspec'
 require 'rspec/expectations'
 require_relative '../lib/matches/get_text.rb'
 
