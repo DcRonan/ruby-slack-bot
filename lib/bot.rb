@@ -38,6 +38,18 @@ If in a channel: type @Premier League \'command name\' or \'help\' if in app'
         long_desc 'Tables shows you the current or previous table.'
       end
 
+      command :goals do
+        title 'goals'
+        desc 'Returns the \'top goal scorers\''
+        long_desc 'Shows a full list of all the players who have scored, from top to bottom'
+      end
+
+      command :assists do
+        title 'assists'
+        desc 'Returns the \'most assists\''
+        long_desc 'Shows a full list of all the players who have made an assist, from top to bottom'
+      end
+
       command :transfers do
         title 'transfers'
         desc 'Returns the \'Transfers\' news page'

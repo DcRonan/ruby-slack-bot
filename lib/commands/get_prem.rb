@@ -23,6 +23,14 @@ module PremierLeague
       client.say(channel: data.channel, text: 'https://www.premierleague.com/tables')
     end
 
+    command 'goals' do |client, data, _match|
+      client.say(channel: data.channel, text: 'https://www.premierleague.com/stats/top/players/goals')
+    end
+
+    command 'assists' do |client, data, _match|
+      client.say(channel: data.channel, text: 'https://www.premierleague.com/stats/top/players/goal_assist')
+    end
+
     command 'transfers' do |client, data, _match|
       client.say(channel: data.channel, text: 'https://www.premierleague.com/transfers')
     end

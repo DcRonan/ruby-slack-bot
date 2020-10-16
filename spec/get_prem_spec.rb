@@ -75,6 +75,22 @@ describe SlackRubyBot::Commands do
     expect(message: "#{SlackRubyBot.config.user} tables").to respond_with_slack_message('https://www.premierleague.com/tables')
   end
 
+  it 'Checks if the Bot returns a message for \'goals\'' do
+    expect(message: "#{SlackRubyBot.config.user} goals").to respond_with_slack_message
+  end
+
+  it 'Checks if the Bot returns the link for \'goals\'' do
+    expect(message: "#{SlackRubyBot.config.user} goals").to respond_with_slack_message('https://www.premierleague.com/stats/top/players/goals')
+  end
+
+  it 'Checks if the Bot returns a message for \'assists\'' do
+    expect(message: "#{SlackRubyBot.config.user} assists").to respond_with_slack_message
+  end
+
+  it 'Checks if the Bot returns the link for \'assists\'' do
+    expect(message: "#{SlackRubyBot.config.user} assists").to respond_with_slack_message('https://www.premierleague.com/stats/top/players/goal_assist')
+  end
+
   it 'Checks if the Bot returns ta message for \'transfers\'' do
     expect(message: "#{SlackRubyBot.config.user} transfers").to respond_with_slack_message
   end
