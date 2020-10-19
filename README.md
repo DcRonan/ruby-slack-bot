@@ -6,7 +6,7 @@
  
 | Contents        |
 | ------------- |
-| [Built With](#built-with 🛠) |
+| [Built With](#built-with-🛠) |
 | [Install](#install-⏳) |
 | [Hints](#hints-💡) |
 | [Testing](#testing-⚙️) |
