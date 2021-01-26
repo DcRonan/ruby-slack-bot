@@ -18,7 +18,7 @@
 
 ![gif](./assets/slack-recording.gif)
 
-In this Slack Bot, I have created it so you can interact, receive messages and information for what you desire. I have created an app that provides you with a broad range of information on an english football league, the `Premier League` ⚽
+In this Slack Bot, I have created it so you can interact, receive messages and information for what you desire. I have created an app that provides you with a broad range of information on an English football league, the `Premier League` ⚽
 
 ## Built With 🛠
 ```
@@ -37,10 +37,10 @@ In this Slack Bot, I have created it so you can interact, receive messages and i
 1. - [ ] Open your `Terminal`
 2. - [ ] Navigate to the directory where you will like to install the repo by running `cd FOLDER-NAME`
 3. - [ ] Run `git clone git@github.com:DcRonan/ruby-slack-bot.git` to download <b>or</b> you can download using `HTTPS` by running `git clone https://github.com/DcRonan/ruby-slack-bot.git` in the terminal
-4. - [ ] Run `cd ruby-slack-bot` to enter directory
+4. - [ ] Run `cd ruby-slack-bot` to enter the directory
 5. - [ ] Run `bundle install` to install Ruby Gems (<b>hint:</b> Mac users, if not working then run `sudo bundle install`)
-6. - [ ] Create your own Slack [workspace](https://slack.com/create#email)
-7. - [ ] Create your own [Bot](https://slack.com/services/new/bot)
+6. - [ ] Create your Slack [workspace](https://slack.com/create#email)
+7. - [ ] Create your [Bot](https://slack.com/services/new/bot)
 8. - [ ] Give it a `username`, `name` and `logo` if you want
 9. - [ ] Keep note of your `API Token` as shown in the example below:
 ![api-token](./assets/api.png)
@@ -67,7 +67,7 @@ In this Slack Bot, I have created it so you can interact, receive messages and i
 > I have used [rspec](https://rspec.info/) testing tool to test the code by creating many test cases. Please follow below to test my code
 
 1. - [ ] Open `Terminal` again
-2. - [ ] Run `cd ruby-slack-bot` to enter directory
+2. - [ ] Run `cd ruby-slack-bot` to enter the directory
 3. - [ ] Run `rspec` to start testing
 4. - [ ] All tests will pass ✅
 
@@ -81,7 +81,7 @@ In this Slack Bot, I have created it so you can interact, receive messages and i
 [![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:danielconnorronan@gmail.com) <br>
 [![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/dc_ronan)
 
-### Acknowledgments 🌟
+### Acknowledgements 🌟
 
 Thank you to [Daniel Doubrovkine](https://github.com/dblock) for the tutorial on building this app 👊
 
